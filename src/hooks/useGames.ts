@@ -9,6 +9,7 @@ export interface Platform {
 }
 
  export interface Game {
+  // image_background(image_background: unknown): unknown;
   id: number;
   name: string;
   background_image: string;
