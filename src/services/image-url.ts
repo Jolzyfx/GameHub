@@ -1,5 +1,7 @@
+import dow from '../assets/dow.png'
+
 const getCroppedImageUrl = (url: string) => {
- if (!url) return '';
+ if (!url) return dow;
 
   const target = 'media/'
   const index = url.indexOf(target) + target.length;
