@@ -1,6 +1,5 @@
 
-import useData from "./useData";
-import { Game } from "./useGames";
+import genres from '../data/genre.ts'
 
  export interface Genre {
   id: number
@@ -10,6 +9,6 @@ import { Game } from "./useGames";
  
 
 
-const useGenres = () => useData<Game>('/genres')
+const useGenres = () => ({data: genres, isLoading: false, error: null})
 
 export default useGenres
