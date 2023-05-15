@@ -5,7 +5,7 @@ import APIClient, { FetchResponse } from '../services/api-client.ts'
 
 
 const apiClient = new APIClient<Genre>('/genres')
-
+  
  export interface Genre {
   id: number
   name: string
@@ -16,7 +16,7 @@ const apiClient = new APIClient<Genre>('/genres')
 
 const useGenres = () => useQuery({
     queryKey: ['genres'],
-    queryFn: apiClient.getAll,
+    queryFn:  apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000,
     initialData: { count: genres.length, results: genres }
   })
