@@ -8,11 +8,11 @@ const apiClient = new APIClient<Game>('/games')
 
 export interface Game {
   image_background: string;
-
-  // image_background(image_background: unknown): unknown;
   id: number;
+  slug: string;
   name: string;
   background_image: string;
+  description_raw: string;
   parent_platforms: { platform: Platform }[];
   metacritic: number;
   rating_top: number;
