@@ -1,9 +1,12 @@
 import { Platform } from "./Platform";
+import { Publisher } from "./Publisher";
 
 export interface Game {
   image_background: string;
   id: number;
   slug: string;
+  genres:Game[];
+  publishers: Publisher[]
   name: string;
   background_image: string;
   description_raw: string;
