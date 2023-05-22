@@ -1,7 +1,7 @@
 import { Platform } from "./Platform";
 import { Publisher } from "./Publisher";
 
-export interface Game {
+export default interface Game {
   image_background: string;
   id: number;
   slug: string;
