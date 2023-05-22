@@ -2,13 +2,17 @@ import { HStack, Image } from '@chakra-ui/react'
 import logo from '../assets/download (1).svg'
 import ColorModeSwitch from './ColorModeSwitch'
 import SearchInput from './SearchInput'
+import { Link } from 'react-router-dom'
 
 
 
 const Navbar = () => {
   return (
    <HStack  padding='10px'>
-     <Image src={logo} paddingBottom={6}/>
+     <Link to='/'>
+       <Image src={logo} paddingBottom={6} objectFit='cover'/>
+     </Link>
+    
      <SearchInput />
      <ColorModeSwitch/>
    </HStack>
